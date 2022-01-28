@@ -1,0 +1,144 @@
+body {
+  margin: 0px; /*Moves the margin to the very edge of the webpage. Otherwise, there would be a small gap between the edge of webpage and content. This is added to the body so it affects the entire webpage */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-section {
+  background-color: #1F2937;
+  padding-top: 20px; /* Moves meme guide logo and links on the right down from the top margin of the webpage */
+  padding-left: 200px; /* Moves meme guide logo, title, description, and button away from the left margin and towards the center */
+  padding-right: 200px; /* Moves Kapa and the picture away from the right margin and towards the center */
+  padding-bottom: 100px; /* Extends the bottom blue background lower to create blank space below the button and picture */
+}
+
+.header,
+.left,
+.right {
+  display: flex; /* In order to seperate content to the left and right, I used display: flex for the entire header, but also divided the content into left and right that also used with display: flex */
+  justify-content: space-between; /* Separates the meme guide logo from the right-side links with space in betweee */
+  margin-bottom: 40px; /* Adds space between the header and content below (title, description, picture, and button) */
+}
+
+.left { /* Changes the meme guide logo */
+  color: #F9FAF8;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.right { /* Adds a gap between the right-side links (kekw, widepeepoHappy, and kappa) */
+  gap: 50px;
+}
+
+.right a { /* Changes the appearance of the right-side header links */
+  color: #E5E7EB;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.top {
+  color: #F9FAF8;
+  display: flex;
+  gap: 200px; /* Adding a gap separates the top section KEKW picture from the content on the left (title, description, button). */
+}
+
+h1 {
+  color: #F9FAF8;
+  font-size: 48px;
+  font-weight: bolder;
+  margin: 0px; /* Removes the margin around the title to keep it at the same level at the kekw picture */
+}
+
+.top p { /* Changes the top sections description below the main title */
+  color: #E5E7EB;
+  font-size: 18px;
+}
+
+.top .pic-one img { /* Changes the kekw image size */
+  height: 200px;
+  width: auto;
+}
+
+button { /* Changes the appearance of the top button */
+  background-color: #3882F6;
+  border-radius: 6px;
+  padding: 5px 20px;
+  font-size: 18px;
+}
+
+button a { /* Changes the appearance of the bottom button */
+  text-decoration: none;
+  color: #F9FAF8;
+  font-weight: bold;
+}
+
+.favorite-memes {
+  display: flex; /* Defaults all pictures and images in the Award Winning Meme section to a horizontal row. Originally I added flex-direction: row, then after testing in inspect mode using Chrome DevTools, I realized this was not necessary since the default value of display: flex is row and not column */
+  justify-content: space-evenly;
+  margin: 50px;
+}
+
+.top-middle h2 {
+  color: #1F2937;
+  font-size: 36px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.one,
+.two,
+.three,
+.four {
+  display: flex; /* Similar to the header, I placed all images and descriptions in one large div, then created a separate div for each that allowed me to add display: flex to each image and description pair. */
+  flex-direction: column; /* By placing all images and descriptions in their own div, adding flex-direction: column brings the description below the image */
+  align-items: center;
+}
+
+img {
+  border: 5px solid #1F2937;
+  border-radius: 6px;
+  height: 200px;
+  width: 200px;
+}
+
+.favorite-memes p { /* Changes the font-size of the image description */
+  font-size: 20px;
+}
+
+.bottom-middle h2 { /* Changes the appearance of the quote section */
+  background-color: #E5E7EB;
+  color: #1F2937;
+  font-size: 36px;
+  font-style: italic;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom {
+  background: #3882F6;
+  color: #F9FAF8;
+  border-radius: 6px;
+  margin: 100px 200px; /* The margin in this case starts with the top, right, bottom, and middle. The top and bottom are 100px and the left and right are 200px */
+  padding: 30px 80px; /* Creates blank space padding from the content to the edge of the blue margin */
+  display: flex;
+  align-items: center; /* Aligns the button in the center */
+  gap: 200px; /* Creates a gap between the bottom button and content on the left side */
+}
+
+.bottom .first { /* Changes the appearance of the title, still not sure what meme to use? */
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.bottom-right button { /* Changes the border of the bottom right button */
+  border: 2px solid #F9FAF8;
+}
+
+.footer {
+  color: #E5E7EB;
+  background-color: #1F2937;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+}
