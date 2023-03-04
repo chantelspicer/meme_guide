@@ -1,4 +1,4 @@
-# Project: Meme Guide
+# Project: CSS Website
 I developed a website full of memes by using HTML and CSS with links to external webpages.
 
 **Link to project:** https://github.com/chantelspicer/meme_guide
